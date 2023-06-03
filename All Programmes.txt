@@ -1,0 +1,757 @@
+Problems 
+package condition;
+
+import java.util.Scanner;
+
+public class BiggestEliment {
+
+	public static void main(String[] args) {
+Scanner s=new Scanner(System.in);
+System.out.println("Enter three Number");
+int a=s.nextInt();
+int b=s.nextInt();
+int c=s.nextInt();
+int big=a;
+if(b>big) {
+	big=b;
+}
+if (c>big) {
+	big=c;
+}
+System.out.println("Biggest Element: "+big);
+	}
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class GivenNoEvenOdd1 {
+
+	public static void main(String[] args) {
+Scanner sc=new Scanner(System.in);
+System.out.println("E22nter the number");
+int num=sc.nextInt();
+if (num%2==0) {
+	System.out.println("The given no is Even");
+}
+	else {
+		System.out.println("The given no is odd");
+	}}}
+	
+	package condition;
+
+import java.util.Scanner;
+
+public class GivenNoEvenOdd2 {
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		if (num/2*2==num) {
+			System.out.println("The given no is Even");
+		}
+			else {
+				System.out.println("The given no is odd");
+			}}
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class GivenNoEvenOdd3 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		System.out.println(num%2==0?"even":"Odd");
+	}
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class GivenNoEvenOdd4 {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number");
+		int num=sc.nextInt();
+		switch (num%2) {
+		case 0:
+			System.out.println("even");
+			break;
+		case 1:
+			System.out.println("odd");
+			break;
+		}
+	}
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class GivenNoEvenOdd5 {
+	public static void main(String[] args) {
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter the number");
+			int num=sc.nextInt();
+			String [] s= {"even","odd"};
+			System.out.println(s[num%2]);
+	}
+}
+
+package condition;
+
+import java.util.Scanner;
+public class LeapYear {
+    public static void main(String[] args) {
+        Scanner S = new Scanner(System.in);
+
+        System.out.print("Enter a year: ");
+        int year = S.nextInt();
+        boolean isLeapYear = false;
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    isLeapYear = true;
+                }
+            } else {
+                isLeapYear = true;
+            }
+        }
+
+        if (isLeapYear) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class Leapyr {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the year");
+		int year= sc.nextInt();
+		if((year%4==0 && year%100!=0)||year%400==0){
+			System.out.println("is a leap year");
+		}
+		else 
+			System.out.println("not a leap year");
+	}
+
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class PalindromeNo {
+	   public static void main(String[] args) {
+	      Scanner input = new Scanner(System.in);
+	      System.out.print("Enter a number: ");
+	      int number = input.nextInt();
+
+	      // reverse the number using a while loop
+	      int reversedNumber = 0;
+	      int originalNumber = number;
+	      while (originalNumber != 0) {
+	         int remainder = originalNumber % 10;
+	         reversedNumber = reversedNumber * 10 + remainder;
+	         originalNumber /= 10;
+	      }
+
+	      // check if the reversed number is equal to the original number
+	      if (number == reversedNumber) {
+	         System.out.println(number + " is a palindrome number.");
+	      } else {
+	         System.out.println(number + " is not a palindrome number.");
+	      }
+	   }
+	}
+
+package condition;
+
+import java.util.Scanner;
+
+public class PositiveNagativeNo {
+
+	    public static void main(String[] args) {
+	        Scanner input = new Scanner(System.in);
+	        
+	        System.out.print("Enter a number: ");
+	        int num = input.nextInt();
+	        
+	        if (num > 0) {
+	            System.out.println("The number is positive.");
+	        } else if (num < 0) {
+	            System.out.println("The number is negative.");
+	        } else {
+	            System.out.println("The number is zero.");
+	        }
+	    }
+	}
+
+package condition;
+
+import java.util.Scanner;
+
+public class PrintUnitPlace {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value");
+		int num = sc.nextInt();
+		while (num > 0) {
+			int rem = num % 10;
+			System.out.println(rem);
+			num = num / 10;
+		}
+
+	}
+
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class Res {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the 4 sub marks");
+		int Sql = sc.nextInt();
+		int Mt = sc.nextInt();
+		int Java = sc.nextInt();
+		int Sel = sc.nextInt();
+		if (Sql < 35 || Mt < 35 || Java < 35 || Sel < 35) {
+			System.out.println("fail");
+		} else {
+			int per = (Sql + Mt + Java + Sel) / 4;
+			if (per >= 85) {
+				System.out.println("Distinction");
+			} else if (per >= 60) {
+				System.out.println("First class");
+			} else
+				System.out.println("Second class");
+		}
+	}
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class SeperateDigit {
+    public static void main(String[] args) {
+        Scanner s= new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = s.nextInt();
+        
+        int digit;
+        while (number != 0) {
+            digit = number % 10;
+            System.out.println(digit);
+            number /= 10;
+        }
+    }
+}
+
+package condition;
+
+import java.util.Scanner;
+
+public class SpcDig {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the no");
+		int num= sc.nextInt();
+		int a=num%10;
+		int b=num/10;
+		int res=(a+b)+(a*b);
+		if (num==res) {
+			System.out.println("Special Digit No");
+		}
+		else
+			System.out.println("is not special two digit no");
+	}
+
+}
+package condition;
+
+public class SpecialDigit {
+
+	public static void main(String[] args) {
+		for (int i = 10; i < 100; i++) {
+		    int a = i / 10;
+		    int b= i % 10;
+		    if (a*b == a+b) {
+		        System.out.println(i + " is a special two-digit number.");
+		    }
+		}
+
+	}
+
+}
+package condition;
+
+import java.util.Scanner;
+
+public class StudentRes{
+	public static void main(String[] args) {
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the results");
+double a=s.nextDouble();
+double b=s.nextDouble();
+double c=s.nextDouble();
+double d=s.nextDouble();
+double e=35;
+if (a>e) {
+	System.out.println("pass");
+	}
+if (b>e) { 
+	System.out.println("pass");
+}
+if (c>e) { 
+	System.out.println("pass");
+}
+ if (d>e) {
+	System.out.println("pass");
+} 
+ else{
+	System.out.println("Fail");
+}}}
+
+
+package condition;
+
+import java.util.Scanner;
+
+public class SumofNo {
+
+	public static void main(String[] args) {
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the no");
+int num = s.nextInt();
+int sum = 0;
+while (num > 0) {
+    int digit = num % 10;
+    sum += digit;
+    num /= 10;
+	}
+System.out.println(sum);
+}}
+
+package condition;
+
+import java.util.Scanner;
+
+public class TofindDays {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the month");
+		int M= sc.nextInt();
+		switch (M) {
+		case 1,3,5,7,8,10,12:
+		System.out.println("31 Days");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println("30 Days");
+			break;
+		case 2:
+			System.out.println("28 Days");
+			break;
+			default:
+				System.out.println("please enter the valid Month");
+			}}}
+			
+			package condition;
+
+import java.util.Scanner;//x power of n values
+
+public class XpowerofN {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int x = sc.nextInt();
+		System.out.println("Enter the Value");
+		int n = sc.nextInt();
+		int ans = 1;
+		while (n > 0) {
+			ans = ans * x;
+			n--;
+		}
+		System.out.println(ans);
+	}
+}
+
+package Basics;
+
+import java.util.Scanner;
+
+public class ArmStrongNo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value: ");
+		int num = sc.nextInt();
+		int temp = num;
+		int temp1 = temp;
+		int sum = 0;
+		int count1 = 0;
+		
+		
+		while (num > 0) {
+			num = num /10;
+			count1++;
+		}
+		while (temp > 0) {
+			int rem = temp % 10;
+			int power = count1;
+			int pro = 1;
+			while (power > 0) {
+				pro = pro * rem;
+				power--;
+			}
+			sum = sum + pro;
+			temp = temp / 10;
+		}
+		if (temp1 == sum) {
+			System.out.println("AMstrong No");
+		} else {
+			System.out.println("Not a AMstrong No");
+		}
+	}
+}
+package Basics;
+
+import java.util.Scanner;
+
+public class Basics {
+//IS a prime no or not
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Value");
+		int num = sc.nextInt();
+		boolean res = isprime(num);
+		if (res)
+			System.out.println("Is a prime");
+		else
+			System.out.println("Is not prime ");
+	}
+
+	private static boolean isprime(int num) {
+		int i = 2;
+		while (i < num / 2) {
+			if (num % i == 0)
+				return false;
+			i++;
+		}
+		return true;
+	}
+}
+package Basics;
+
+public class Factrorila {
+
+	public static void main(String[] args) {
+		int num = 3;
+		int fact = 1;
+		while (num >= 1) {
+			fact = fact * num;
+			num--;
+		}
+		System.out.println(fact);
+	}
+}
+package Basics;
+
+public class FibbonocyNo {
+
+	public static void main(String[] args) {
+		int a = 0;
+		int b = 1;
+		int sum = 0;
+		while (sum <= 20) {
+			sum = a + b;
+			System.out.println(sum);
+			a = b;
+			b = sum;
+		}
+	}
+}
+/*
+ * using for loop for(int i=2; i<10; i++) sum=a+b; System.out.println(sum); a=b;
+ * b=sum;
+ */
+ 
+ package Basics;
+
+public class fibonocyNo {
+
+	public static void main(String[] args) {
+		int num = 10;
+		int n1 = 0;
+		int n2 = 1;
+		int sum = 0;
+		while (num > 0) {
+			System.out.println(n1);
+			sum = n1 + n2;
+			n1 = n2;
+			n2 = sum;
+			num--;
+		}
+	}
+
+}
+package Basics;
+
+import java.util.Scanner;
+
+public class HappyNo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the no");
+		int num = sc.nextInt();
+		while (num > 9) {
+			int sum = 0;
+			while (num != 0) {
+				int rem = num % 10;
+				sum = sum + (rem * rem);
+				num = num / 10;
+			}
+			num = sum;
+		}
+		if (num == 1 || num == 7) {
+			System.out.println("Is a Happy No");
+
+		} else
+			System.out.println("is Not happy No");
+	}
+}
+package Basics;
+
+import java.util.Scanner;
+
+public class ISperfect {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value: ");
+		int num = sc.nextInt();
+		String res = isperfect(num);
+		System.out.println(res);
+	}
+
+	private static String isperfect(int num) {
+		int i = 1;
+		int sum = 0;
+		while (i <= num / 2) {
+			if (num % i == 0) {
+				sum = sum + i;
+			}
+			i++;
+		}
+		if (sum == num)
+			return "Hi";
+		else
+			return "bye";
+	}
+}
+
+package Basics;
+
+import java.util.Scanner;
+
+//to find the Nion no
+/*9
+ 9*9=81
+ SUM OF RESULT VALUE=8+1=9
+ ENTER VALUE=SUM OF RESULT VALUE
+ */
+public class NionNum {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value: ");
+		int num = sc.nextInt();
+		String res = isNeon(num);
+		System.out.println(res);
+	}
+
+	private static String isNeon(int num) {
+		int sum = 0;
+		int sq = num * num;
+		while (sq > 0) {
+			int rem = sq % 10;
+			sum = sum + rem;
+			sq = sq / 10;
+		}
+		if (num == sum)
+			return " is a neon";
+		else
+			return "Not a Neon Number";
+	}
+}
+package Basics;
+
+import java.util.Scanner;
+
+/*/Write a java programme to check the no is perfect 
+or not if no is perfect written Hi else written Bye*/
+public class PerfectNo {
+	/*
+	 * given no =28 Divided By 1,2,4,,7,14 sum=1+2+4+7+14=28 sum=given no
+	 */
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value: ");
+		int num = sc.nextInt();
+		int i = 1;
+		int sum = 0;
+		while (i <= num / 2) {
+			if (num % i == 0) {
+				sum = sum + i;
+			}
+			i++;
+		}
+		if (sum == num)
+			System.out.println("Hi");
+		else
+			System.out.println("bye");
+	}
+}
+package Basics;
+
+import java.util.Scanner;
+
+/*
+ 1124
+ 1+1+2+4=8
+ 1*1*2*4=8
+ 
+ sum=product */
+public class SpyNo {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value");
+		int num = sc.nextInt();
+		String S = isSpyno(num);
+		System.out.println(S);
+
+	}
+
+	private static String isSpyno(int num) {
+		int sum = 0;
+		int pro = 1;
+		while (num > 0) {
+			int rem = num % 10;
+			sum = sum + rem;
+			pro = pro * rem;
+			num = num / 10;
+
+		}
+		if (sum == pro)
+			return "the no is Spy no";
+		else
+			return "It is not Spy no";
+
+	}
+}
+package Basics;
+
+import java.util.Scanner;
+
+public class StrongNo {
+	/*
+	 * 145 1!=1 4!=4*3*2*1=24 5!=5*4*3*2*1=120 sum of result 1+24+120=145
+	 */
+	public static void main(String[] args) {
+		int num = 145;
+		int temp = num;
+		int sum = 0;
+		while (num > 0) {
+			int rem = num % 10;
+			int f = 1;
+			while (num >= 1) {
+				f = f * rem;
+				rem--;
+			}
+			sum = sum + f;
+		}
+		if (temp == num) {
+			System.out.println("Is Strong no");
+		} else
+			System.out.println("Is a not a Strong no");
+	}
+}
+package Basics;
+
+public class SunnyNo {
+
+	public static void main(String[] args) {
+		int num = 9;
+		int count = 0;
+		int i = 1;
+		while (i < (num / 2)) {
+			if (i * i == num + 1) {
+				count++;
+				break;
+			}
+			i++;
+		}
+		if (count == 0)
+
+			System.out.println("is not sunny no");
+		else
+			System.out.println("is a sunny no");
+	}
+}
+package Basics;
+
+public class Swapno {
+//using extra variable
+	public static void main(String[] args) {
+		int a = 30;
+		int b = 20;
+		int c = a
+		a = b;
+		b = c;
+		System.out.println(a);
+		System.out.println(b);
+	}
+}
+package Basics;
+
+public class WithoutUsingExtravariable {
+//without using extra variable
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 20;
+		a = a + b;
+		b = a - b;
+		a = a - b;
+		System.out.println(a);
+		System.out.println(b);
+	}
+
+}
+
+
+
+

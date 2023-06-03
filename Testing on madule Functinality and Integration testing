@@ -1,0 +1,52 @@
+Example ZOHO CRM
+Over testing on Campaign name Text filed (should accept 6 to 20 characters) 
+
+Functionality Testing 
+Testing each and every component thoroughly is called functionality testing.
+Functionality testing can be done is 3-ways 
+
+
+Over testing on Campaign name Text filed (should accept 6 to 20 characters) 
+
+1)	Over testing: Testing the software with same set of scenarios & the scenarios which doesn’t make any sense.
+inputs: MallikaVijaya, vijayaMallik, Vijaya123, arjun123, hELLO123, aRJUN123.
+
+
+2)	Under testing: Testing the software with insufficient set of scenarios is called as under testing.
+inputs: 123@Arjun, Vijaya()1234, Vijaya.KL,Vijay&&&, Vijaya---KL.
+
+3)	Optimized testing:  Testing the software with sufficient set of scenarios and the scenarios which makes sense is called as optimized testing.
+inputs: Mallikarjun@Md,Vijaya@9900, Vijaya__DB,990076@MDB, 990076@mDB.
+
+
+
+2)Campaign mobile no Text filed (should accept 10 numerical characters only) 
+
+Over testing: inputs
+99007635665652, 88990077768636,000000000, 1234567891, 6677889900,()()())())()(),____________.
+
+Under Testing: Inputs
+9900763548,9900763465,9965764864,
+
+optimized testing:inputs
+9900763625,8989898989,8765474673,MD99007646, 
+
+
+
+Integration Testing: Testing the dataflow between modules is called integration testing. 
+
+There are Two types of integration testing, they are 
+
+a) Incremental integration testing: It is incrementally adding the modules and testing the data flow between them.
+
+b) Non incremental integration testing: Here we combine all the modules in one shot and test the data flow between them. 
+
+
+a) Integration testing on Two madules:(campign page to recent or campign list page)
+1)In my project i create campign page with filled neccessory required data and saved it, it should be displayed in Recent list pages and also in campign list pages,
+again click on campign majar tab, it should show campign list page and select the campign and click on clone button make neccessory changes and click on save button,
+it should show in campign list page and recent list page which have been saved.
+
+b) Non incremental integration testing: (Accounts page to recent list page and potential page)
+In my project creat account on account page it should show in recent list page and account list page, go to potential list page and fill the neccessory data in potential page,
+click on accoount look up icon it should show the account list page select the accounts and click on save button it should show in potential list page and recent list page.

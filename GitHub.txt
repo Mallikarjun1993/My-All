@@ -1,0 +1,38 @@
+API Note
+https://reqres.in/api/
+
+
+Steps In API
+https://api.github.com
+Home=Api=rest api=overview=resource in the rest api=github api=repose=post operation=Create reposatary for AUntiticated user=copy End URL
+https://api.github.com/user/repos- (401 Unauthorise in Postman=No permission to perform Action).
+
+CREAT TOKEN
+home=Devoloper setting=personal access token=select classic token=generate new token=enter the Purfose=select repo checkbox and delete-repo checkbox=create TOKEN=u will get Token ID.
+TOKEN = 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
+
+how to get permission
+goto postman=authorization=type(beariartype)=paste URL=goto body=enter below details
+    "key":"value"
+{
+    "name": "Mallikarjun",
+    "description": "movie",
+    "private": false
+}
+successfully created.
+
+
+Errors found in Postman
+200 ok= Succefully Created.
+201 created=successfully created.
+204 no content= (successfully deleted)
+400= synthatical error, Body is Missing.
+401= No permission to perform action.
+403 forbidden=no permission to delete the repo.
+422= cannot create reposatary with the same name.(no duplicates)
+
+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
+https://api.github.com.
+
+JSON Path finder: go to json path finder, copy the Body paste in json body, get the All urls.
+

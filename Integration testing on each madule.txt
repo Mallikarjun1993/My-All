@@ -1,0 +1,27 @@
+INTEGRATION TESTING ON CONTACT MADULE.
+1) Admin can create contacts.
+2) Admin can edit the contacts.
+3) Admin can clone the contacts.
+4) Admin can delete contacts.
+5) Admin can print preview the contacts.
+
+INTEGRATION TESTING ON ACCOUNTS MADULE.
+1) Admin can create accounts.
+2) Admin can edit the accounts.
+3) Admin can clone the accounts.
+4) Admin can delete accounts.
+5) Admin can print preview the accounts.
+
+INTEGRATION TESTING ON POTENTIAL MADULE.
+1) Admin can create Potential.
+2) Admin can edit the Potential.
+3) Admin can clone the Potential.
+4) Admin can delete Potential.
+5) Admin can print preview the Potential.
+
+INTEGRATION TESTING ON CAMPIGN MADULE.
+1) Admin can create campign.
+2) Admin can edit the campign.
+3) Admin can clone the campign.
+4) Admin can delete campign.
+5) Admin can print preview the campign.
